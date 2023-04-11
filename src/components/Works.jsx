@@ -7,21 +7,36 @@ import { SectionWrapper } from '../hoc'
 import { projects } from '../constants'
 import { fadeIn, textVariant } from '../utils/motion'
 
-const projectCard = ({ index, name, description, tags, image, source_code_link }) => {
+const ProjectCard = ({ index, name, description, tags, image, source_code_link }) => {
   return (
-
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
-      <Tilt className="bg-tertiary p-5 rounded-2xl sm:w-360px w-full"
+      <Tilt className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
         options={{
           max: 45,
           scale: 1,
           speed: 450
         }}
       >
-        <div className='relative w-full h-[250px]'>
-
+        <div className='relative w-full h-[230px]'>
+          <img src={image} alt={name} className='w-full h-full object-cover rounded-2xl' />
+          <div className='absolute flex justify-end m-0 inset-0  card-img_hover'>
+            <div onClick={() => window.open(source_code_link, "__blank")} className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'>
+              <img src={github} alt="github" className='object-contain w-1/2 h-1/2' />
+            </div>
+          </div>
+        </div>
+        <div className='mt-5'>
+          <h3 className='text-white text-[24px] font-bold'>{name}</h3>
+          <p className='mt-2 text-secondary text-[14px]'>{description}</p>
         </div>
 
+        <div className='mt-4 flex flex-row gap-2'>
+          {tags.map((tag) => (
+            <p key={`tag-${tag.name}`} className={`${tag.color} text-[14px]`}>
+              #{tag.name}
+            </p>
+          ))}
+        </div>
       </Tilt>
     </motion.div>
   )
@@ -44,10 +59,7 @@ const Works = () => {
 
       <div className="mt-20 flex flex-wrap gap-7">
         {projects.map((project, index) => (
-          <projectCard
-            key={`project-${index}`}
-            index={index}
-            {...project}
+          <ProjectCard key={`project-${index}`} index={index} {...project}
 
           />
         ))}
