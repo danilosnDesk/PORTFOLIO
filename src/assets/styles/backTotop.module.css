@@ -1,0 +1,29 @@
+.scrollProgress {
+    position: fixed;
+    bottom: 40px;
+    left: 40px;
+    height: 5px;
+    background-color: #be1111;
+}
+
+
+.scrollTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #5e419c;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.hide {
+    display: none;
+}

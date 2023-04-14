@@ -46,11 +46,11 @@ const Navbar = () => {
             </p>
           </Link>
 
-          <ul className='list-none hidden sm:flex flex-row gap-2'>
+          <ul className='list-none hidden sm:flex flex-row gap-2 bg'>
             {navLinks.map((link) => (
               <li key={link.id} className={
                 `${active === link.title ? "text-red-500" : "text-secondary"} 
-                hover:text-white text-[18px]`
+                hover:text-white text-[15px]`
 
               }
                 onClick={() => setactive(link

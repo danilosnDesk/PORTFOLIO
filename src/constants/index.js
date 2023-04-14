@@ -4,25 +4,20 @@ import {
     creator,
     web,
     javascript,
-    typescript,
     html,
     css,
     reactjs,
-    redux,
     tailwind,
-    nodejs,
-    mongodb,
     git,
-    figma,
-    docker,
-    meta,
     starbucks,
     tesla,
-    shopify,
     carrent,
     jobit,
     tripguide,
-    threejs,
+    ULELA,
+    laravel,
+    technicalSupport,
+    php
 } from "../assets";
 
 export const navLinks = [
@@ -73,54 +68,38 @@ const technologies = [
         icon: javascript,
     },
     {
-        name: "TypeScript",
-        icon: typescript,
-    },
-    {
         name: "React JS",
         icon: reactjs,
-    },
-    {
-        name: "Redux Toolkit",
-        icon: redux,
     },
     {
         name: "Tailwind CSS",
         icon: tailwind,
     },
     {
-        name: "Node JS",
-        icon: nodejs,
-    },
-    {
-        name: "MongoDB",
-        icon: mongodb,
-    },
-    {
-        name: "Three JS",
-        icon: threejs,
-    },
-    {
         name: "git",
         icon: git,
     },
     {
-        name: "figma",
-        icon: figma,
+        name: "laravel",
+        icon: laravel,
     },
     {
-        name: "docker",
-        icon: docker,
+        name: "technical Support",
+        icon: technicalSupport,
+    },
+    {
+        name: "php",
+        icon: php,
     },
 ];
 
 const experiences = [
     {
-        title: "React.js Developer",
-        company_name: "Starbucks",
+        title: "PHP Developer",
+        company_name: "FREELANCER",
         icon: starbucks,
         iconBg: "#383E56",
-        date: "March 2020 - April 2021",
+        date: "March 2020 - Now",
         points: [
             "Developing and maintaining web applications using React.js and other related technologies.",
             "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -129,11 +108,11 @@ const experiences = [
         ],
     },
     {
-        title: "React Native Developer",
-        company_name: "Tesla",
+        title: "REACT NATIVE DEVELOPER",
+        company_name: "FREELA",
         icon: tesla,
         iconBg: "#E6DEDD",
-        date: "Jan 2021 - Feb 2022",
+        date: "Jan 2021 - Now",
         points: [
             "Developing and maintaining web applications using React.js and other related technologies.",
             "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -142,11 +121,11 @@ const experiences = [
         ],
     },
     {
-        title: "Web Developer",
-        company_name: "Shopify",
-        icon: shopify,
+        title: "IT CONSULTER",
+        company_name: "ULELA ANGOLA",
+        icon: ULELA,
         iconBg: "#383E56",
-        date: "Jan 2022 - Jan 2023",
+        date: "Jan 2022 - Now",
         points: [
             "Developing and maintaining web applications using React.js and other related technologies.",
             "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -155,11 +134,11 @@ const experiences = [
         ],
     },
     {
-        title: "Full stack Developer",
-        company_name: "Meta",
-        icon: meta,
+        title: "WEB DEVELOPER",
+        company_name: "ULELA ANGOLA",
+        icon: ULELA,
         iconBg: "#E6DEDD",
-        date: "Jan 2023 - Present",
+        date: "Jan 2022 - Present",
         points: [
             "Developing and maintaining web applications using React.js and other related technologies.",
             "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
