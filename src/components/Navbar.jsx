@@ -9,6 +9,8 @@ const Navbar = () => {
   const [active, setactive] = useState("");
   const [toggle, settoggle] = useState(false);
 
+  const [position, setPosition] = useState(0);
+
 
   const [scrolled, setScrolled] = useState(false);
 
@@ -21,16 +23,31 @@ const Navbar = () => {
         setScrolled(false);
       }
     };
-
     window.addEventListener("scroll", handleScroll);
 
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const addwidthScroll = () => {
+    const positionScroll = window.pageYOffset;
+    const totalHeight = document.documentElement.scrollHeight; // toatal do scrollheigth
+    const visibleHeight = document.documentElement.clientHeight; // Total do height do cliente (USER)
+    const width = document.documentElement.clientWidth; // Total do height do cliente (USER)
+    const percentage = (positionScroll / (totalHeight - visibleHeight)) * 100;
+    setPosition(percentage);
+    console.log(width);
+  }
 
+  useEffect(() => {
+    window.addEventListener("scroll", addwidthScroll);
+    return () => {
+      window.removeEventListener("scroll", addwidthScroll);
+
+    };
+  }, []);
 
   return (
-    <div>
+    <div className='relative'>
       <nav className={`${styles.paddingX}  w-full flex items-center py-2 fixed top-0 z-20 
       ${scrolled ? 'bg-primary' : 'bg-transparent'}`}>
         <div className='w-full flex justify-between items-center  mx-auto'>
@@ -82,9 +99,11 @@ const Navbar = () => {
                   </li>
                 ))}
               </ul>
+
             </div>
           </div>
         </div>
+        <div className={`absolute bottom-0 h-1  bg-violet-800 max-w-full`} style={{ width: `${position.toFixed(2)}%` }} />
       </nav >
     </div >
   )
