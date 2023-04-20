@@ -19,9 +19,9 @@ const Hero = () => {
             <p className={`${styles.heroSubText} mt-2 text-white block sm:hidden`}>Hi..! I'm a fullstack <br /> developer. See me.</p>
             <p className={`${styles.heroSubText} hidden sm:block mt-2 text-white `}>I develop web systems, <br /> mobile applications, APIs and I can work as IT Support </p>
             <div className='flex gap-4 mt-7'>
-              <span className="bg-[#5e419c] p-2 text-xs text-white"><Facebook /></span>
-              <span className="bg-[#5e419c] p-2 text-xs text-white"><Linkedin /></span>
-              <span className="bg-[#5e419c] p-2 text-xs text-white"><Mail /></span>
+              <a href='https://www.facebook.com/DanilsonCayumbuca/' className="bg-[#5e419c] p-2 text-xs text-white"><Facebook /></a>
+              <a href='https://www.linkedin.com/in/danilson-kayumbuca-11695522b/' className="bg-[#5e419c] p-2 text-xs text-white"><Linkedin /></a>
+              <a href='mailto:944440377esma@gmail.com' className="bg-[#5e419c] p-2 text-xs text-white"><Mail /></a>
             </div>
           </div>
         </div>
