@@ -8,6 +8,8 @@ import { projects } from '../constants'
 import { fadeIn, textVariant } from '../utils/motion'
 
 const ProjectCard = ({ index, name, description, tags, image, source_code_link }) => {
+
+  const texto = description.substring(0, 120) + "..."
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
       <Tilt className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
@@ -27,7 +29,7 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link }
         </div>
         <div className='mt-5'>
           <h3 className='text-white text-[24px] font-bold'>{name}</h3>
-          <p className='mt-2 text-secondary text-[14px]'>{description}</p>
+          <p className='mt-2 text-secondary text-[14px]'>{texto}</p>
         </div>
 
         <div className='mt-4 flex flex-row gap-2'>
@@ -53,8 +55,10 @@ const Works = () => {
         <motion.p
           variants={fadeIn("", "", 0.1, 1)}
           className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam inventore explicabo eos nam aliquid accusantium perferendis possimus nulla, accusamus minus, fuga corporis porro? Iusto voluptas expedita, atque quidem consectetur voluptatum?
-        </motion.p>
+          I specialize in creating beautiful and functional websites using HTML, CSS, and JavaScript. I'm also experienced in building
+          dynamic web applications with ReactJS and PHP,
+          and I'm proficient in database management using MySQL. Additionally, I'm skilled in developing mobile applications with
+          React Native and utilizing Tailwind CSS for fast and efficient styling.</motion.p>
       </div>
 
       <div className="mt-20 flex flex-wrap gap-7">

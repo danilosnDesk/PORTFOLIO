@@ -15,9 +15,14 @@ import {
     jobit,
     tripguide,
     ULELA,
+    logo,
     laravel,
     technicalSupport,
-    php
+    php,
+    expresscourses,
+    ulela_angola,
+    JOB_APP,
+    ecomm
 } from "../assets";
 
 export const navLinks = [
@@ -97,26 +102,26 @@ const experiences = [
     {
         title: "PHP Developer",
         company_name: "FREELANCER",
-        icon: starbucks,
+        icon: logo,
         iconBg: "#383E56",
         date: "March 2020 - Now",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
+            "Developing and maintaining web applications using php and other related technologies.",
             "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
+            "Implementing version control in all of the products builded.",
             "Participating in code reviews and providing constructive feedback to other developers.",
         ],
     },
     {
         title: "REACT NATIVE DEVELOPER",
         company_name: "FREELA",
-        icon: tesla,
+        icon: logo,
         iconBg: "#E6DEDD",
         date: "Jan 2021 - Now",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
+            "Developing mobile applications with react-native and other related technologies.",
+            "Giving support to our teams including designers, product managers, and other developers to create high-quality products.",
+            "Implementing API and ensuring cross-browser compatibility.",
             "Participating in code reviews and providing constructive feedback to other developers.",
         ],
     },
@@ -127,10 +132,10 @@ const experiences = [
         iconBg: "#383E56",
         date: "Jan 2022 - Now",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
+            "Developing web applications using PHP and other related technologies.",
             "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Implementing microsoft office to the administration works.",
+            "Participating in code reviews and providing sourching and procurament..",
         ],
     },
     {
@@ -140,10 +145,10 @@ const experiences = [
         iconBg: "#E6DEDD",
         date: "Jan 2022 - Present",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
+            "Developing web applications using PHP and other related technologies.",
             "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Implementing microsoft office to the administration works.",
+            "Participating in code reviews and providing sourching and procurament..",
         ],
     },
 ];
@@ -151,92 +156,118 @@ const experiences = [
 const testimonials = [
     {
         testimonial:
-            "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-        name: "Sara Lee",
-        designation: "CFO",
-        company: "Acme Co",
-        image: "https://randomuser.me/api/portraits/women/4.jpg",
+            "Is better when I work with him. Realy better.",
+        name: "Engenheiro Elias",
+        designation: "Telecomunications Engineer",
+        company: "ULELA ANGOLA",
+        image: "https://media.licdn.com/dms/image/C5603AQHeeKZtrQDTcg/profile-displayphoto-shrink_800_800/0/1655807368731?e=1687392000&v=beta&t=SaMYWooJpddmleOnxnb_obkVbGHQZyIiOPeVEMi8NjQ",
     },
     {
         testimonial:
-            "I've never met a web developer who truly cares about their clients' success like Rick does.",
-        name: "Chris Brown",
-        designation: "COO",
-        company: "DEF Corp",
-        image: "https://randomuser.me/api/portraits/men/5.jpg",
+            "Is good having Danilson in our company. Is worth.",
+        name: "Ngunza Hanja",
+        designation: "CEO",
+        company: "ULELA ANGOLA",
+        image: "https://media.licdn.com/dms/image/D5603AQFSPeLmgmS3fA/profile-displayphoto-shrink_800_800/0/1679999810732?e=1687392000&v=beta&t=_5i_l4_aH8wZ3JC1dOr-R9p70bFN9Kc3piVCPg82WjY",
     },
     {
         testimonial:
-            "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-        name: "Lisa Wang",
-        designation: "CTO",
-        company: "456 Enterprises",
-        image: "https://randomuser.me/api/portraits/women/6.jpg",
+            "Yeah, I recommend him to web developing projects",
+        name: "Miguel Cataganha",
+        designation: "Administration",
+        company: "ULELA ANGOLA",
+        image: "https://media.licdn.com/dms/image/C4D0BAQHm2-jWWkMpbg/company-logo_200_200/0/1678980716208?e=1689811200&v=beta&t=xbik1JuIhJZ5kMqv5pNic_OLM6tBRU-qDnLIAmPP1Ko",
     },
 ];
 
 const projects = [
     {
-        name: "Car Rent",
+        name: "Express Courses",
         description:
-            "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+            "Plataforma Angolana de cursos profissionais intensivos. Para diminuir a forma massiva de ingresso aos cursos profissionais em Angola",
         tags: [
             {
-                name: "react",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "mongodb",
+                name: "javascript",
                 color: "green-text-gradient",
             },
             {
-                name: "tailwind",
+                name: "php",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "mysql",
                 color: "pink-text-gradient",
             },
         ],
-        image: carrent,
+        image: expresscourses,
         source_code_link: "https://github.com/",
     },
     {
-        name: "Job IT",
+        name: "SITE ULELA ANGOLA",
         description:
-            "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+            "Desenvolvi o site da ULELA ANGOLA parea possibilitá-los em armagenar seus produtos em banco de dados e ministrá-los em dashboard",
         tags: [
             {
-                name: "react",
+                name: "HTML5_CSSS3",
                 color: "blue-text-gradient",
             },
             {
-                name: "restapi",
+                name: "php",
                 color: "green-text-gradient",
             },
             {
-                name: "scss",
+                name: "mysql",
                 color: "pink-text-gradient",
             },
         ],
-        image: jobit,
+        image: ulela_angola,
         source_code_link: "https://github.com/",
     },
     {
-        name: "Trip Guide",
+        name: "APP JOB FINDER",
         description:
-            "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+            "Plataforma Angolana, para definir e procurrar cursos online em Angola e por qualquer parte do mundo",
         tags: [
             {
-                name: "nextjs",
+                name: "react-native",
                 color: "blue-text-gradient",
             },
             {
-                name: "supabase",
+                name: "reapidAPI",
                 color: "green-text-gradient",
             },
             {
-                name: "css",
-                color: "pink-text-gradient",
+                name: "JsearchAPI",
+                color: "blue-text-gradient",
             },
         ],
-        image: tripguide,
+        image: JOB_APP,
+        source_code_link: "https://github.com/",
+    },
+    ,
+    {
+        name: "BOOKS.COM",
+        description:
+            "Sistema de venda online(ecommerce), para definir e procurar produtos online em Angola e por qualquer parte do mundo. Assim podendo comprar online com pickup",
+        tags: [
+            {
+                name: "php",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "mysql",
+                color: "green-text-gradient",
+            },
+            {
+                name: "HTML_CSS",
+                color: "pink-text-gradient",
+            },
+            {
+                name: "javascript",
+                color: "blue-text-gradient",
+            },
+        ],
+        image: ecomm,
         source_code_link: "https://github.com/",
     },
 ];

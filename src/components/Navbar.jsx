@@ -66,7 +66,7 @@ const Navbar = () => {
           <ul className='list-none hidden sm:flex flex-row gap-2 bg'>
             {navLinks.map((link) => (
               <li key={link.id} className={
-                `${active === link.title ? "text-red-500" : "text-secondary"} 
+                `${active === link.title ? "text-[#5e419c]" : "text-secondary"} 
                 hover:text-white text-[15px]`
 
               }

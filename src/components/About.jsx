@@ -44,12 +44,7 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda deleniti veniam
-        architecto ut, nostrum quisquam aliquam nihil facilis, ex illo tenetur! Voluptate pariatur
-        sint, facere quis at iste sed itaque!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda deleniti veniam
-        architecto ut, nostrum quisquam aliquam nihil facilis, ex illo tenetur! Voluptate pariatur
-        sint, facere quis at iste sed itaque!
+        Welcome to my portfolio! I am a Full-Stack Developer with experience in HTML, CSS, ReactJS, PHP, MySQL, JavaScript, React Native, and Tailwind CSS. I am passionate about creating innovative and user-friendly web and mobile applications. With my strong technical skills and problem-solving mindset, I am committed to delivering high-quality software solutions that exceed clients' expectations. Please feel free to explore my projects and don't hesitate to get in touch if you have any questions or want to discuss potential collaborations.
 
       </motion.p>
 

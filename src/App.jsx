@@ -3,6 +3,7 @@ import { About, Contact, Experience, Feedbacks, Hero, Navbar, Works, Tech, Stars
 import { useEffect, useState } from 'react';
 import styles from "../src/assets/styles/backTotop.module.css";
 import { ArrowBigUp, ChevronUp } from 'lucide-react'
+import { bigAvatar } from './assets';
 
 const App = () => {
   const [showScroll, setShowScroll] = useState(false);
@@ -53,11 +54,23 @@ const App = () => {
       </div>
       {/** Back to top */}
       <>
-        <button style={{ animation: `${porcetageScroll < 70 ? '' : 'toTop 4s infinite ease-in-out'}` }} className={`${styles.scrollTop} ${showScroll ? "" : styles.hide}`} onClick={scrollToTop}>
-          <span className='text-xs'>
-            <ArrowBigUp />
-          </span>
-        </button>
+        {
+          porcetageScroll < 70 ?
+            (<button className={`${styles.scrollTop} ${showScroll ? "" : styles.hide}`} onClick={scrollToTop}>
+              <span className='text-xs'>
+                <ArrowBigUp />
+              </span>
+            </button>) :
+            (
+              <button className={`${styles.scrollTop2} ${showScroll ? "" : styles.hide}`} onClick={scrollToTop}>
+                <span className='text-xs'>
+                  <ArrowBigUp />
+                </span>
+              </button>
+            )
+
+        }
+
       </>
     </BrowserRouter >
   )
