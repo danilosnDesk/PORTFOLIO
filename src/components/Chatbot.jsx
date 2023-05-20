@@ -20,6 +20,7 @@ const FacebookChatbot = () => {
   }, []);
 
   return (
+    <h1> Chat bot </h1>
     <div>
       <div id="fb-root"></div>
       <div id="fb-customer-chat" className="fb-customerchat"></div>
