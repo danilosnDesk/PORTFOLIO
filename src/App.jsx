@@ -55,25 +55,7 @@ const App = () => {
         </div>
       </div>
       {/** Back to top */}
-      <>
-        {
-          porcetageScroll < 70 ?
-            (<button className={`${styles.scrollTop} ${showScroll ? "" : styles.hide}`} onClick={scrollToTop}>
-              <span className='text-xs'>
-                <ArrowBigUp />
-              </span>
-            </button>) :
-            (
-              <button className={`${styles.scrollTop2} ${showScroll ? "" : styles.hide}`} onClick={scrollToTop}>
-                <span className='text-xs'>
-                  <ArrowBigUp />
-                </span>
-              </button>
-            )
-
-        }
-
-      </>
+   
     </BrowserRouter >
   )
 
