@@ -111,8 +111,20 @@ const Contact = () => {
           >
             {loading ? "Sending..." : "Send"}
           </button>
+
+
+          <div className="pt-2">
+            <p className={styles.sectionSubText}>OR</p>
+          </div>
+          <div className="flex flex-col gap-2">
+            <span className="text-slate-400"><span className="text-slate-300">Email:</span> 944440377esma@gmail.com</span>
+            <span className="text-slate-400"><span className="text-slate-300">telefone: 🇦🇴  </span>  +244 932129667 | +244 958315270</span>
+            <span className="text-slate-400"><span className="text-slate-300">WhatsApp:  </span>  +244 932129667 | +244 958315270</span>
+          </div>
         </form>
       </motion.div>
+
+
 
       <motion.div
         variants={slideIn("right", "tween", 0.2, 1)}

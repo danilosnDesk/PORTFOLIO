@@ -1,54 +1,36 @@
-.scrollTop {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: #5e419c;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    transition: opacity 0.3s ease;
-    font-size: 15px;
-}
-
 .scrollTop2 {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: #5e419c;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    transition: opacity 0.3s ease;
-    font-size: 15px;
-    animation: toTop 4s infinite ease-in-out;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #5e419c;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+  font-size: 15px;
+  animation: toTop 4s infinite ease-in-out;
 }
 
 .hide {
-    display: none;
+  display: none;
 }
 
 @keyframes toTop {
-    50% {
-        box-shadow: none;
-    }
+  50% {
+    box-shadow: none;
+  }
 
-    10% {
-        box-shadow: 0px 0px 5px 9px #5e419cc2;
-    }
+  10% {
+    box-shadow: 0px 0px 5px 9px #5e419cc2;
+  }
 
-    40% {
-        box-shadow: 0px 0px 9px 11px #5e419cc2;
-    }
+  40% {
+    box-shadow: 0px 0px 9px 11px #5e419cc2;
+  }
 }

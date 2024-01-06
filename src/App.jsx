@@ -1,11 +1,6 @@
 import { BrowserRouter } from 'react-router-dom';
 import { About, Contact, Experience, Feedbacks, Hero, Navbar, Works, Tech, StarsCanvas } from './components';
 import { useEffect, useState } from 'react';
-import styles from "../src/assets/styles/backTotop.module.css";
-import { ArrowBigUp, ChevronUp } from 'lucide-react'
-import { bigAvatar } from './assets';
-import FacebookChatbot from './components/Chatbot';
-
 const App = () => {
   const [showScroll, setShowScroll] = useState(false);
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -48,14 +43,13 @@ const App = () => {
         <Tech />
         <Works />
         <Feedbacks />
-        <FacebookChatbot/>
         <div className='relative z-0'>
           <Contact />
           <StarsCanvas />
         </div>
       </div>
       {/** Back to top */}
-   
+
     </BrowserRouter >
   )
 
