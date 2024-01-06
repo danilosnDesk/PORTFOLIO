@@ -117,9 +117,9 @@ const Contact = () => {
             <p className={styles.sectionSubText}>OR</p>
           </div>
           <div className="flex flex-col gap-2">
-            <span className="text-slate-400"><span className="text-slate-300">Email:</span> 944440377esma@gmail.com</span>
-            <span className="text-slate-400"><span className="text-slate-300">telefone: 🇦🇴  </span>  +244 932129667 | +244 958315270</span>
-            <span className="text-slate-400"><span className="text-slate-300">WhatsApp:  </span>  +244 932129667 | +244 958315270</span>
+            <span className="text-slate-400 text-[12px] lg:text-base flex flex-col lg:flex-row"><span className="text-slate-300">Email:</span> 944440377esma@gmail.com</span>
+            <span className="text-slate-400 text-[12px] lg:text-base flex flex-col lg:flex-row"><span className="text-slate-300">telefone: 🇦🇴  </span>  +244 932129667 | +244 958315270</span>
+            <span className="text-slate-400 text-[12px] lg:text-base flex flex-col lg:flex-row"><span className="text-slate-300">WhatsApp:  </span>  +244 932129667 | +244 958315270</span>
           </div>
         </form>
       </motion.div>
