@@ -33,7 +33,9 @@ Este portfolio ilustra sections como Experiências, Skills, Projects e contactos
 
 ## Aprendizados
 
- Aprendi muito neste projecto.
+- Design 3D com three.js
+- Design Motion com frammer - Motion
+- Envio de E-mails com emailJS
 
 #### Uso de:
 - [@Three.js]()
